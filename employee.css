@@ -51,6 +51,9 @@ nav a:hover {
   text-align: center;
   padding: 20px;
 }
+.scroll {
+  overflow-x: auto;
+}
 
 /* Form styles */
 form {
