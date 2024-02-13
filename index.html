@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="employee.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <h1>Employee Management System</h1>
+      <ul>
+        <li><a href="#" onclick="showAddForm()">Add Employee</a></li>
+        <li><a href="#" onclick="showEmployeeList()">View Employee</a></li>
+        <li><a href="#" onclick="showSearchForm()">Search</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div id="content">
+      <!-- Message Container for Displaying Success or Error Messages -->
+      <div id="messageContainer"></div>
+
+      <!-- Main Page Content (initially shows Add New Employee form) -->
+      <div id="mainPage">
+        <h2>Add New Employee</h2>
+        <form onsubmit="addEmployee(); return false;" id="addForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required /><br />
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" required /><br />
+
+          <label for="empId">Employee ID:</label>
+          <input type="text" id="empId" required /><br />
+
+          <label for="designation">Designation:</label>
+          <input type="text" id="designation" required /><br />
+
+          <button type="submit" class="primary">Add Employee</button>
+        </form>
+      </div>
+
+      <!-- Search Result Area (initially hidden) -->
+      <div id="searchResult" class="search-result" style="display: none"></div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="employee.js"></script>
+  </body>
+</html>

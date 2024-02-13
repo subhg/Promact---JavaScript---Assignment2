@@ -1,0 +1,230 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  margin: 0;
+  color: #f9f9f9;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+/* Main content area styles */
+#content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Form styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  border-radius: 4px;
+}
+
+/* Button styles */
+button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Primary button */
+button.primary {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Edit button */
+button.edit {
+  background-color: #555;
+  color: #fff;
+}
+button.edit:hover {
+  background-color: #4caf50;
+}
+
+/* Delete button */
+button.delete {
+  background-color: #444;
+  color: #fff;
+}
+button.delete:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Cancel button */
+button.cancel {
+  background-color: #444;
+  color: #fff;
+}
+button.cancel:hover {
+  background-color: #c0392b;
+}
+
+/* Search button */
+button.search {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Button hover effects */
+button:hover {
+  background-color: #444;
+}
+
+/* Heading styles */
+h2 {
+  color: #f9f9f9;
+}
+
+/* Style for the employee list table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the table */
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #ddd;
+  color: black;
+  font-size: 18px; /* Increase font size for the heading */
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style for the search result box */
+.search-result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Set text alignment to left */
+}
+
+/* Message container styles */
+.message {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Success message styles */
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Error message styles */
+.error {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Responsive styles for small screens */
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+}
+
+/* Employee details box */
+.search-result {
+  margin-top: 20px;
+  padding: 10px; /* Increased padding for better spacing */
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 600px; /* Set a maximum width to match the form */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 8px;
+}
